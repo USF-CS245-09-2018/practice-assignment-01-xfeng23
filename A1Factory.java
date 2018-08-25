@@ -1,5 +1,3 @@
-package edu.usfca.cs.cs245;
-
 
 public class A1Factory {
 
@@ -12,7 +10,9 @@ public class A1Factory {
 	 */
 	Factorial getFactorial(String factorialType) throws CannotConstructException {
 		if (factorialType.equalsIgnoreCase("recursive")) {
+		
 			return new FactorialRecursive();
+			
 		}
 		if (factorialType.equalsIgnoreCase("iterative")) {
 			return new FactorialIterative();
